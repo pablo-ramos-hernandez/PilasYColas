@@ -1,13 +1,43 @@
 package org.salesianos.Clases;
 
 import java.util.Random;
+import java.util.Stack;
 
 public class Clientes {
 
     private String nombre;
     private int totalProductos;
+    private Stack<String> pilasProductos = new Stack<>();
 
-    // Creacion de la lista de productos
+    public String getNombre() {
+        return nombre;
+    }
 
+    public int getTotalProductos() {
+        return totalProductos;
+    }
 
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public void setTotalProductos(int totalProductos) {
+        this.totalProductos = totalProductos;
+    }
+
+    public void pushPilaCliente() {
+
+        Random random = new Random();
+
+        totalProductos = random.nextInt(10 - 1) + 1;
+
+        for (int index = 0; index < totalProductos; index++) {
+            pilasProductos.push(CestaDeLaCompra.getRandomItems());
+        }
+
+    }
+
+    public Clientes() {
+        this.nombre = CestaDeLaCompra.getRandomNames();
+    }
 }

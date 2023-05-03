@@ -32,6 +32,8 @@ public class CestaDeLaCompra {
         int randomIndex = random.nextInt(CestaDeLaCompra.Productos_Names.length);
 
         return CestaDeLaCompra.Productos_Names[randomIndex];
+
+        
     }
 
     private static final String[] CLIENTE_NAMES = new String[] {
