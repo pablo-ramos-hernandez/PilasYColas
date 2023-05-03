@@ -39,5 +39,19 @@ public class Clientes {
 
     public Clientes() {
         this.nombre = CestaDeLaCompra.getRandomNames();
+        pushPilaCliente();
     }
+
+    @Override
+    public String toString() {
+        String mensaje = "* Nombre: " + nombre + "\n" +
+                "* Total de productos: " + totalProductos + "\n" +
+                "* Lista de articulos en la cesta \n";
+        for (int index = 0; index < totalProductos; index++) {
+            mensaje += pilasProductos.get(index) + "\n";
+        }
+        return mensaje;
+    }
+
+
 }
