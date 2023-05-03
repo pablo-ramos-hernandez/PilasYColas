@@ -32,6 +32,24 @@ public class CestaDeLaCompra {
         int randomIndex = random.nextInt(CestaDeLaCompra.Productos_Names.length);
 
         return CestaDeLaCompra.Productos_Names[randomIndex];
+
+        
     }
+
+    private static final String[] CLIENTE_NAMES = new String[] {
+
+        "Amanda", "Sofía", "Tito", "Ana", "German", "Juan", "Pablo", "Rossi", "Valentin", "Ioan", 
+        "German", "Rita", "Juani", "Jose", "Paola", "Josué", "Ricardo", "Alejandro", "Jordi", "Carlos"
+
+    };
+
+    // Creacion de la utilidad de obtener un producto aleatorio
+    public static String getRandomNames() {
+        Random random = new Random();
+
+        int randomIndex = random.nextInt(CestaDeLaCompra.CLIENTE_NAMES.length);
+
+        return CestaDeLaCompra.CLIENTE_NAMES[randomIndex];
+    };
 
 }
