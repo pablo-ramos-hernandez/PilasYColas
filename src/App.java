@@ -6,7 +6,7 @@ public class App {
     public static void main(String[] args) throws Exception {
         Scanner teclado = new Scanner(System.in);
         boolean salir = false;
-        int opcion;
+        String opcion = "";
 
         while (!salir) {
             System.out.println("Bienvenido al menu aqui tiene las opcion: " + "\n"
@@ -21,7 +21,16 @@ public class App {
 
             opcion = teclado.nextLine();
             switch (opcion) {
-                case 1:
+                case "1":
+
+                    break;
+                case "2":
+                    break;
+                case "3":
+                    break;
+                case "4":
+                    break;
+                case "5":
                     break;
             }
         }
