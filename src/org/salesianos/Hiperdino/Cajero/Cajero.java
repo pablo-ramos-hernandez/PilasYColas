@@ -1,7 +1,9 @@
-package org.salesianos.Clases;
+package org.salesianos.Hiperdino.Cajero;
 
 import java.util.LinkedList;
 import java.util.Queue;
+
+import org.salesianos.Hiperdino.Cliente.Clientes;
 
 public class Cajero {
     private int id = 0;
@@ -75,13 +77,12 @@ public class Cajero {
 
     @Override
     public String toString() {
-        String mensaje = 
-        "* Numero de caja: " + id + "\n" +
-        "* Total de clientes: " + filaCliente.size() + "\n" +
-        "* Clientes en la fila: \n";
-        
+        String mensaje = "* Numero de caja: " + id + "\n" +
+                "* Total de clientes: " + filaCliente.size() + "\n" +
+                "* Clientes en la fila: \n";
+
         for (Clientes clientes : filaCliente) {
-            mensaje += clientes.getNombre()+"\n";
+            mensaje += clientes.getNombre() + "\n";
         }
         return mensaje;
     }

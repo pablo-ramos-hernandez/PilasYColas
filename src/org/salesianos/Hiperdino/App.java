@@ -1,7 +1,9 @@
+package org.salesianos.Hiperdino;
+
 import java.sql.ClientInfoStatus;
 import java.util.Scanner;
 
-import org.salesianos.Clases.Cajero;
+import org.salesianos.Hiperdino.Cajero.Cajero;
 
 public class App {
     public static void main(String[] args) throws Exception {

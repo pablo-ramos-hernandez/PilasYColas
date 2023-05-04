@@ -1,4 +1,4 @@
-package org.salesianos.Clases;
+package org.salesianos.Hiperdino.Cesta;
 
 import java.util.Random;
 
@@ -33,13 +33,12 @@ public class CestaDeLaCompra {
 
         return CestaDeLaCompra.Productos_Names[randomIndex];
 
-        
     }
 
     private static final String[] CLIENTE_NAMES = new String[] {
 
-        "Amanda", "Sofía", "Tito", "Ana", "German", "Juan", "Pablo", "Rossi", "Valentin", "Ioan", 
-        "German", "Rita", "Juani", "Jose", "Paola", "Josué", "Ricardo", "Alejandro", "Jordi", "Carlos"
+            "Amanda", "Sofía", "Tito", "Ana", "German", "Juan", "Pablo", "Rossi", "Valentin", "Ioan",
+            "German", "Rita", "Juani", "Jose", "Paola", "Josué", "Ricardo", "Alejandro", "Jordi", "Carlos"
 
     };
 

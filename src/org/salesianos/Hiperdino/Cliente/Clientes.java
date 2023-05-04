@@ -1,7 +1,9 @@
-package org.salesianos.Clases;
+package org.salesianos.Hiperdino.Cliente;
 
 import java.util.Random;
 import java.util.Stack;
+
+import org.salesianos.Hiperdino.Cesta.CestaDeLaCompra;
 
 public class Clientes {
 
@@ -52,6 +54,5 @@ public class Clientes {
         }
         return mensaje;
     }
-
 
 }
