@@ -1,3 +1,4 @@
+import java.sql.ClientInfoStatus;
 import java.util.Scanner;
 
 import org.salesianos.Clases.Cajero;
@@ -7,6 +8,7 @@ public class App {
         Scanner teclado = new Scanner(System.in);
         boolean salir = false;
         String opcion = "";
+        Cajero cajero = new Cajero();
 
         while (!salir) {
             System.out.println("Bienvenido al menu aqui tiene las opcion: " + "\n"
@@ -22,15 +24,20 @@ public class App {
             opcion = teclado.nextLine();
             switch (opcion) {
                 case "1":
-
+                    cajero.abrirCajero();
                     break;
                 case "2":
+                    cajero.anadirCliente();
                     break;
                 case "3":
+                    cajero.atenderCliente();
                     break;
                 case "4":
+                    System.out.println(cajero.toString());
                     break;
                 case "5":
+                    cajero.cerrarCajero();
+                    salir = true;
                     break;
             }
         }
